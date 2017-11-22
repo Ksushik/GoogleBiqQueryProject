@@ -2,19 +2,22 @@ package com.owox.osyniaeva.actors;
 
 import akka.actor.AbstractActor;
 import akka.actor.ActorRef;
+import akka.actor.ActorSystem;
 import akka.actor.Props;
 import akka.event.Logging;
 import akka.event.LoggingAdapter;
 import akka.japi.pf.ReceiveBuilder;
 import com.google.cloud.bigquery.BigQuery;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-@Component
 public class SupervisorActor extends AbstractActor {
 
     private static String projectId, datasetId, prefix;
     private static int count;
     private final LoggingAdapter log = Logging.getLogger(context().system(), this);
+
 
     public SupervisorActor() {
         receive(ReceiveBuilder.

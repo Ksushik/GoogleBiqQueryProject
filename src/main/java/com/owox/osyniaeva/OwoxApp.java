@@ -4,11 +4,14 @@ import akka.actor.ActorRef;
 import akka.actor.ActorSystem;
 import akka.actor.Props;
 import com.owox.osyniaeva.actors.SupervisorActor;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class OwoxApp {
+
 
     public static void main(String ...args) throws Exception {
         SpringApplication.run(OwoxApp.class, args);

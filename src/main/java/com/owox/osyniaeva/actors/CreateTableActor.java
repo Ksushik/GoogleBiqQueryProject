@@ -13,7 +13,6 @@ import org.springframework.stereotype.Component;
 import java.util.Calendar;
 import java.util.Date;
 
-@Component
 public class CreateTableActor extends AbstractActor {
 
     private BigQuery authorizedClient;

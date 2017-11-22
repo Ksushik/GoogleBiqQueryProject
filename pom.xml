@@ -81,12 +81,6 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>com.google.truth</groupId>
-            <artifactId>truth</artifactId>
-            <version>0.29</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
             <version>${spring.version}</version>
@@ -95,6 +89,12 @@
         <dependency>
             <groupId>com.typesafe.akka</groupId>
             <artifactId>akka-actor_2.11</artifactId>
+            <version>${akka.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.typesafe.akka</groupId>
+            <artifactId>akka-slf4j_2.11</artifactId>
             <version>${akka.version}</version>
         </dependency>
     </dependencies>
